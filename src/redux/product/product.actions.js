@@ -22,7 +22,6 @@ export const fetchProducts = () => {
       try {
         const response = await axios.get("/product/6781/");
         const { data } = response;
-        console.log(data);
         dispatch(fetchProductSuccess(data));
       } catch (error) {
         dispatch(fetchProductFailure(error));

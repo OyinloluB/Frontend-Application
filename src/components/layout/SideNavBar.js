@@ -7,13 +7,10 @@ import styles from "../../assets/styles/navbar.module.scss";
 const SideNavBar = () => {
   return (
     <>
-      {/* <div className={styles.navbar}>
-        <img src={logo} alt="innoloft logo" className={styles.logo} />
-      </div> */}
       <nav className={styles.sidebar}>
         <ul>
-          {SideNavData.map((item) => (
-            <li>
+          {SideNavData.map((item, index) => (
+            <li key={index}>
               <Link to={`${item.path}`}>{item.title}</Link>
             </li>
           ))}

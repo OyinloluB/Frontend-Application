@@ -10,14 +10,14 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <TopNavBar />
       <div className="wrapper">
         <SideNavBar />
         <Route exact path="/" component={Main} />
         <Route path="/product" component={Product} />
       </div>
-    </>
+    </div>
   );
 }
 
