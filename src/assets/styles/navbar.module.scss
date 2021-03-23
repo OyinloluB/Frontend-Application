@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #272e71;
+  padding: 25px 80px;
+
+  .logo {
+    width: 140px;
+  }
+}
+
+.sidebar {
+  background-color: #f6f6f6;
+  height: calc(100vh - 75px);
+  width: 20%;
+  padding: 2vh 0 0 80px;
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: 10px 0;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: #212529;
+        font-size: 18px;
+      }
+    }
+  }
+}

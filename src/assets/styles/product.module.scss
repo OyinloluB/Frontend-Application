@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  padding: 30px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 65% auto;
+  column-gap: 3%;
+  height: 100%;
+
+  &_lhs {
+    display: grid;
+    row-gap: 2%;
+    height: 100%;
+
+    &_productImage {
+      background-color: #f6f6f6;
+    }
+
+    &_productMainInfo {
+      background-color: #f6f6f6;
+    }
+
+    &_productTab {
+      background-color: #f6f6f6;
+    }
+  }
+
+  &_rhs {
+    display: grid;
+    row-gap: 2%;
+    height: 100%;
+
+    &_user {
+      background-color: #f6f6f6;
+    }
+
+    &_map {
+      background-color: #f6f6f6;
+    }
+  }
+}
