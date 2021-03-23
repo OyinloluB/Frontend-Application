@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "../redux/product/product.actions";
 
 import styles from "../assets/styles/product.module.scss";
 
 const Product = () => {
+  const dispatch = useDispatch();
+  const { product } = useSelector((state) => state.product);
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+    console.log(product);
+  }, [dispatch]);
+
   return (
     <div className={styles.container}>
       <div className={styles.product}>
