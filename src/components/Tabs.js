@@ -29,14 +29,14 @@ const Tabs = ({ product }) => {
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <p>{product.description}</p>
+          <p>{product?.description}</p>
         </div>
 
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
           <h3>Categories</h3>
-          {product.categories.map((category) => (
+          {product?.categories.map((category) => (
             <input
               type="text"
               value={category.name}
@@ -45,7 +45,7 @@ const Tabs = ({ product }) => {
             />
           ))}
           <h3>Business Models</h3>
-          {product.businessModels.map((businessModel) => (
+          {product?.businessModels.map((businessModel) => (
             <input
               type="text"
               value={businessModel.name}
